@@ -1,0 +1,59 @@
+{
+    "manifestVersion": 1,
+    "id": "azure-devops-escalate-extension",
+    "name": "Azure DevOps Escalate Extension",
+    "publisher": "RazvanValcaneantu",
+    "version": "1.0.18",
+    "public": false,
+    "description": "Adds an 'Escalate' button to create a linked Issue work item.",
+    "categories": [
+      "Azure Repos",
+      "Azure Boards"
+    ],
+    "icons": {
+      "default": "images/icon.png"
+    },
+    "targets": [
+      {
+        "id": "Microsoft.VisualStudio.Services"
+      }
+    ],
+    "scopes": [
+      "vso.work",
+      "vso.work_write",
+      "vso.project"
+    ],
+    "files": [
+      {
+        "path": "dist/index.html",
+        "addressable": true
+      },
+      {
+        "path": "dist/index.js",
+        "addressable": true
+      },
+      {
+        "path": "dist/styles.css",
+        "addressable": true
+      },
+      {
+        "path": "images/icon.png",
+        "addressable": true
+      }
+    ],
+    "contributions": [
+      {
+        "id": "escalate-work-item-control",
+        "type": "ms.vss-work-web.work-item-form-control",
+        "targets": [
+          "ms.vss-work-web.work-item-form"
+        ],
+        "properties": {
+          "name": "Escalate Control",
+          "uri": "dist/index.html",
+          "height": 100
+        }
+      }
+    ]
+  }
+  
