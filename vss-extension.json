@@ -3,7 +3,7 @@
     "id": "azure-devops-escalate-extension",
     "name": "Azure DevOps Escalate Extension",
     "publisher": "RazvanValcaneantu",
-    "version": "1.0.18",
+    "version": "1.0.21",
     "public": false,
     "description": "Adds an 'Escalate' button to create a linked Issue work item.",
     "categories": [
